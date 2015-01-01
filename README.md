@@ -5,6 +5,7 @@ Amber Tutorial
 
 Mainly to install Amber you need to follow http://docs.amber-lang.net/
 And all this tutorial is following the guidlines in the tutorial them https://github.com/amber-smalltalk/amber/wiki/The-counter-example
+note: when I add something between "-" it refers to pictures with in the pictures folder on the repo
 
 After you install amber run this:
 
