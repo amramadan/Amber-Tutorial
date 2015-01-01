@@ -156,4 +156,5 @@ Now save and run open the link from amber serve again it should load automatical
      amber.globals.Yourclass._method();
 
 Remember if you have any problems goto https://github.com/amber-smalltalk/amber open an issue and you will find the help you need 
-
+And that this is just a tiny example of how to use Amber, I for one would like yo use it to make complete webpages.
+Hope this tutorial isn't the last thing you do with such an aawesome enviroment
