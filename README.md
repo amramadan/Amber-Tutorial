@@ -2,7 +2,7 @@ Amber-Tutorial
 ==============
 
 Amber Tutorial
-Tis was all fo GCI (Google Code-In)task https://www.google-melange.com/gci/task/view/google/gci2014/6472822016704512
+This was all fo GCI (Google Code-In)task https://www.google-melange.com/gci/task/view/google/gci2014/6472822016704512
 Mainly to install Amber you need to follow http://docs.amber-lang.net/ 
 (by the way dont follow this tutorial as the previous link is more updated https://github.com/amber-smalltalk/amber/wiki/Writing-my-first-app)
 And all this tutorial is following the guidlines in the tutorial them https://github.com/amber-smalltalk/amber/wiki/The-counter-example
