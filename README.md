@@ -3,8 +3,11 @@ Amber-Tutorial
 
 Amber Tutorial
 This was all fo GCI (Google Code-In)task https://www.google-melange.com/gci/task/view/google/gci2014/6472822016704512
+
 Mainly to install Amber you need to follow http://docs.amber-lang.net/ 
+
 (by the way dont follow this tutorial as the previous link is more updated https://github.com/amber-smalltalk/amber/wiki/Writing-my-first-app)
+
 And all this tutorial is following the guidlines in the tutorial them https://github.com/amber-smalltalk/amber/wiki/The-counter-example
 
 After you install amber run this:
@@ -132,7 +135,7 @@ Okay saveit and commit package now press on class instead of instance and add th
 
 	TCounter new appendToJQuery: 'body' asJQuery
 
-Okay, save and commit package after that you can catgorize your 'instance' and 'class' method if you want to (look at counter example for ideas).Go to the workspace (no not the one on bottom left press ctrl+space open and press workspace). Now if we write ![8](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/8.png)
+Okay, save and commit package after that you can catgorize your 'instance' and 'class' method if you want to (look at counter example for ideas).Go to the workspace (no not the one on bottom left, press ctrl+space open and press workspace). Now if we write ![8](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/8.png)
 
     TCounter run
 Then press Doit. Tada! you got your counter on your HTML page. But do you have to go to the workspace everytime you want to run the counter well till now yes, but we can make it load automatically by opening theindex.html, okay lets add something:
