@@ -123,7 +123,7 @@ The counter is almost ready. All we need now is to implement the two action meth
 
 Okay saveit and commit package now press on class instead of instance and add this to a method
 
-run
+    run
 
 	TCounter new appendToJQuery: 'body' asJQuery
 
