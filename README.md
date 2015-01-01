@@ -44,37 +44,35 @@ Okay, now to make our own Tutorials package and create a Counter:
 
 
 
+<!DOCTYPE html>
+	<html>
 
-       <!DOCTYPE html>
-<html>
+  		<head>
+    			<title>Myapp</title>
+    			<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    			<meta name="author" content="Author" />
+			<script type='text/javascript' src='the.js'></script>
+  		</head>
 
-  <head>
-    <title>Myapp</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="Author" />
-    <script type='text/javascript' src='the.js'></script>
-  </head>
-
-  <body>
-  <p>Hi, Author! Welcome to Amber project: "Myapp".</p>
-  <p>This is the place for your application's HTML. After getting familiar with Amber,
-      just remove this welcome contents from index.html and replace it with your own.</p>
-  <button id="amber-with">Hello from TagBrush >> with:</button>
-  <button id="jquery-append">Hello from jQuery append</button>
-  <ol id="output-list"></ol>
-  <script type='text/javascript'>
-      require(['app'], function (amber) {
-          amber.initialize({
-            'transport.defaultAmdNamespace': "amber-myapp"
-          });
+  		<body>
+  			<p>Hi, Author! Welcome to Amber project: "Myapp".</p>
+  			<p>This is the place for your application's HTML. After getting familiar with Amber,just remove this welcome contents from index.html and replace it with your own.</p>
+  			<button id="amber-with">Hello from TagBrush >> with:</button>
+  			<button id="jquery-append">Hello from jQuery append</button>
+  			<ol id="output-list"></ol>
+  			<script type='text/javascript'>
+      			require(['app'], function (amber) {
+        		 amber.initialize({
+            			'transport.defaultAmdNamespace': "amber-myapp"
+        		 });
           
-          require(["amber-ide-starter-dialog"], function (dlg) { dlg.start(); });
-          amber.globals.Myapp._start();
-        });
-  </script>
-  </body>
+          		 require(["amber-ide-starter-dialog"], function (dlg) { dlg.start(); });
+        		 amber.globals.Myapp._start();
+        		});
+  			</script>
+  		</body>
 
-</html>
+	</html>
 
 Well do you see the "require(['app'], function (amber)" change it to "require(['app', 'amber-myapp/Tutorials'], function (amber)"
 Now if you reload helios you will find the package. (Wow! we have done alot till now right?!)
