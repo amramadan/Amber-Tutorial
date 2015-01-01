@@ -15,7 +15,7 @@ After you install amber run this:
     amber serve
 
 
-for example:
+for example:-
     
      mkdir myapp
      cd myapp
