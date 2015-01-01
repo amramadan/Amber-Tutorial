@@ -45,7 +45,7 @@ Okay, now to make our own Tutorials package and create a Counter:
 
 
 
-       !DOCTYPE html>
+       <!DOCTYPE html>
 <html>
 
   <head>
