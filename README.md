@@ -82,40 +82,40 @@ okay lets press on the 'Tutorials' pachage and on the 'TCounter' Class, now look
 
 well, press on 'instance' and then the rightside column "Methods" now look again at the bottom left workspace, you should see:
 
-messageSelectorAndArgumentNames
-	"comment stating purpose of message"
+	messageSelectorAndArgumentNames
+		"comment stating purpose of message"
 
-	| temporary variable names |
-	statements
+		| temporary variable names |
+		statements
 
 Now add this,The first method is used to initialize the component with the default state, in this case we set the counter to 0:
 
-initialize
-    super initialize.
-    count := 0
+	initialize
+    		super initialize.
+    		count := 0
 
 The method used for rendering a widget is #renderOn:. It takes an instance of HTMLCanvas as parameter. The header h1 is kept as an instance variable, so when the count value changes, we can update its contents accordingly.
 
-renderOn: html
-    header := html h1 
-        with: count asString;
-        yourself.
-    html button
-        with: '++';
-        onClick: [self increase].
-    html button
-        with: '--';
-        onClick: [self decrease]
+	renderOn: html
+	 	header := html h1 
+        		with: count asString;
+        		yourself.
+    	html button
+        	with: '++';
+        	onClick: [self increase].
+    	html button
+        	with: '--';
+        	onClick: [self decrease]
 
 The counter is almost ready. All we need now is to implement the two action methods #increase and #decrease to change the state of our counter and update its header.
 
-increase
-    count := count + 1.
-    header contents: [:html | html with: count asString]
+	increase
+    		count := count + 1.
+    		header contents: [:html | html with: count asString]
 
-decrease
-    count := count - 1.
-    header contents: [:html | html with: count asString]
+	decrease
+    		count := count - 1.
+    		header contents: [:html | html with: count asString]
 
 Okay saveit and commit package now press on class instead of instance and add this to a method
 
