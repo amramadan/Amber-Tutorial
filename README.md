@@ -75,10 +75,14 @@ Okay, now to make our own Tutorials package and create a Counter:
 
 	</html>
 
-Well do you see the 
-	require(['app'], function (amber)
+Well do you see the
+
+	  require(['app'], function (amber)
+	
 change it to
-	require(['app', 'amber-myapp/Tutorials'], function (amber)
+
+	  require(['app', 'amber-myapp/Tutorials'], function (amber)
+	
 Now if you reload helios you will find the package. (Wow! we have done alot till now right?!)
 
 
