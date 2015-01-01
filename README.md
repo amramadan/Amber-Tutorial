@@ -97,7 +97,7 @@ Now add this,The first method is used to initialize the component with the defau
     		super initialize.
     		count := 0
 
-The method used for rendering a widget is #renderOn:. It takes an instance of HTMLCanvas as parameter. The header h1 is kept as an instance variable, so when the count value changes, we can update its contents accordingly.
+The method used for rendering a widget is #renderOn:. It takes an instance of HTMLCanvas as parameter.The header h1 is kept as an instance variable, so when the count value changes, we can update its contents accordingly.
 
 	renderOn: html
 	 	header := html h1 
