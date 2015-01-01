@@ -74,7 +74,10 @@ Okay, now to make our own Tutorials package and create a Counter:
 
 	</html>
 
-Well do you see the "require(['app'], function (amber)" change it to "require(['app', 'amber-myapp/Tutorials'], function (amber)"
+Well do you see the 
+	require(['app'], function (amber)
+change it to
+	require(['app', 'amber-myapp/Tutorials'], function (amber)
 Now if you reload helios you will find the package. (Wow! we have done alot till now right?!)
 
 
@@ -135,6 +138,7 @@ Then press Doit. Tada! you got your counter on your HTML page. But do you have t
         });
 
 (after edit its like this)
+          
           require(["amber-ide-starter-dialog"], function (dlg) { dlg.start(); });
           amber.globals.Myapp._start();
           amber.globals.TCounter._run();
