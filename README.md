@@ -25,7 +25,7 @@ for example:
  
 
 now, make sure that the link is given to you after amber serve command is working if not go back to installing amber and go through the installation again.
-open the link a pop-up will appear -1-, if not make sure that your browser allows pop-ups then open Helios-IDE
+open the link a pop-up will appear![1](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/1.png), if not make sure that your browser allows pop-ups then open Helios-IDE
 
 now open class browser -2- , look at packages column -3- (yes, the one on the lefthanside) go down till you find myapp package -4(1)-.
 Then, go to the adjacent column of classes you will see myapp as well now press on it and look down on the left you will see a workspace with something written -4(2)-:
