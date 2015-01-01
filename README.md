@@ -23,11 +23,11 @@ for example:
      amber serve
  
 
-now, make sure that the link is given to you afeter amber serve is working if not go back to installing amber and go through the installation again.
-open the link a pop-up will appear, if not make sure that your browser allows pop-ups then open Helios-IDE
+now, make sure that the link is given to you after amber serve command is working if not go back to installing amber and go through the installation again.
+open the link a pop-up will appear -1-, if not make sure that your browser allows pop-ups then open Helios-IDE
 
-now open class browser, look at packages column (yes, the one on the lefthanside) go down till you find myapp package.
-Then, go to the adjacent column of classes you will see myapp as well now press on it and look down on the left you will see a workspace with something written:
+now open class browser -2- , look at packages column -3- (yes, the one on the lefthanside) go down till you find myapp package -4(1)-.
+Then, go to the adjacent column of classes you will see myapp as well now press on it and look down on the left you will see a workspace with something written -4(2)-:
         
         Object subclass: #Myapp
 	instanceVariableNames: ''
@@ -42,7 +42,7 @@ Okay, now to make our own Tutorials package and create a Counter:
 	instanceVariableNames: 'count header'
 	package: 'Tutorials'
 
-(well I didn't just call it Counter is that Counter already exists in the examples so to prevent confusing conflicts I used 'TCounter' look up at the code to understand)Then, press saveit at the bottom , now if you will see that Tutorials is red while the rest are kind of brownish color. Well, that is because we didnot commit the package yet don't worry we will commit it now. Press on the Tutorials package (yes the red one), now got to the top tab of the packages, look a bit to the left you will see an arrow pointing downwards press om it then press commit package (or if you would like use ctrl+space+k). You should receive "commit sucessfull". If not either you entered an incorrect code then I will advise you to use my examples or check your own errors OR you loaded the page twice and didnt reopen helios that also causes errors I face it alot at the beginning. Okay, if we refresh the page and reopen helios you will see that the package 'Tutorials' is GONE! (WHAT?!!).First check your /project/path and open the src you should find 'Tutorials.st' and another one 'Tutorials.js', if they are not their, you should go back to the installation and re-follow the tutorial. But if they are there do the following open the index.html in a editor (it should look like this): 
+(well I didn't just call it Counter is that Counter already exists in the examples so to prevent confusing conflicts I used 'TCounter' look up at the code to understand)Then, press saveit at the bottom , now if you will see that Tutorials is red while the rest are kind of brownish color. Well, that is because we didnot commit the package yet don't worry we will commit it now. Press on the Tutorials package (yes the red one), now got to the top tab of the packages, look a bit to the left you will see an arrow pointing downwards press on it then press commit package (or if you would like use ctrl+space+k)-5(1)- . You should receive "commit sucessfull". If not either you entered an incorrect code then I will advise you to use my examples or check your own errors OR you loaded the page twice and didnt reopen helios,I mean you used the one already open, that also causes errors I faced it alot at the beginning. Okay, if we refresh the page and reopen helios you will see that the package 'Tutorials' is GONE! (WHAT?!!).First check your /project/path and open the src you should find 'Tutorials.st'  and another one 'Tutorials.js'-5(2)-, if they are not their, you should go back to the installation and re-follow the tutorial. But if they are there do the following open the index.html in a editor (it should look like this): 
 
 
 
@@ -87,9 +87,9 @@ change it to
 Now if you reload helios you will find the package. (Wow! we have done alot till now right?!)
 
 
-okay lets press on the 'Tutorials' pachage and on the 'TCounter' Class, now look directly under the classes column you will see two things: 1- instance  2-class  (they are beside the Doc checkbox)
+okay lets press on the 'Tutorials' pachage and on the 'TCounter' Class, now look directly under the classes column you will see two things: 1- instance  2-class  -6- (they are beside the Doc checkbox)
 
-well, press on 'instance' and then the rightside column "Methods" now look again at the bottom left workspace, you should see:
+well, press on 'instance' and then the rightside column "Methods" now look again at the bottom left workspace, you should see -7-:
 
 	messageSelectorAndArgumentNames
 		"comment stating purpose of message"
@@ -132,7 +132,7 @@ Okay saveit and commit package now press on class instead of instance and add th
 
 	TCounter new appendToJQuery: 'body' asJQuery
 
-Okay, save and commit package after that you can catgorize your 'instance' and 'class' method if you want to (look at counter example for ideas).Go to the workspace (no not the one on bottom left press ctrl+space open and press workspace). Now if we write:
+Okay, save and commit package after that you can catgorize your 'instance' and 'class' method if you want to (look at counter example for ideas).Go to the workspace (no not the one on bottom left press ctrl+space open and press workspace). Now if we write -8-:
 
     TCounter run
 Then press Doit. Tada! you got your counter on your HTML page. But do you have to go to the workspace everytime you want to run the counter well till now yes, but we can make it load automatically by opening theindex.html, okay lets add something:
@@ -150,7 +150,7 @@ Then press Doit. Tada! you got your counter on your HTML page. But do you have t
           amber.globals.TCounter._run();
         });
 
-Now save and run open the link from amber serve again it should load automatically.But why did I add this line right well its like this:
+Now save and run open the link from amber serve again it should load automatically-9-.But why did I add this line right well its like this:
 
      amber.globals.Yourclass._method();
 
