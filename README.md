@@ -15,6 +15,7 @@ After you install amber run this:
 
 
 for example:
+    
     mkdir myapp
     cd myapp
     amber init
