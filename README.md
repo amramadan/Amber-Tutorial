@@ -8,19 +8,19 @@ And all this tutorial is following the guidlines in the tutorial them https://gi
 
 After you install amber run this:
 
-   mkdir /path/to/project
-   cd /path/to/project
-   amber init
-   amber serve
+    mkdir /path/to/project
+    cd /path/to/project
+    amber init
+    amber serve
 
 
 for example:
     
-    mkdir myapp
-    cd myapp
-    amber init
-    amber serve
-
+     mkdir myapp
+     cd myapp
+     amber init
+     amber serve
+ 
 
 now, make sure that the link is given to you afeter amber serve is working if not go back to installing amber and go through the installation again.
 open the link a pop-up will appear, if not make sure that your browser allows pop-ups then open Helios-IDE
