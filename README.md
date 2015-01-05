@@ -97,15 +97,16 @@ Do you see:
 	     });
 	     
 Make it look like this:
-define([
-	     'amber/depoly',
-	     // --- packages to be deployed begin here ---
-	     'amber-myapp/Myapp'
-	     'amber-myapp/Tutorials'
-	     // --- packages to be deployed end here ---
-	     ], function (amber) {
+
+	define([
+	     	'amber/depoly',
+	     	// --- packages to be deployed begin here ---
+	     	'amber-myapp/Myapp'
+	     	'amber-myapp/Tutorials'
+		// --- packages to be deployed end here ---
+	     	], function (amber) {
 	     	return amber;
-	     });
+	        });
 	     
 Final view:
 ![13](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/13.png)
