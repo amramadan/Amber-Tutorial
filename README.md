@@ -90,7 +90,7 @@ Do you see:
 	define([
 	     'amber/depoly',
 	     // --- packages to be deployed begin here ---
-	     'amber-myapp/Myapp'
+	     'amber-myapp/Myapp',
 	     // --- packages to be deployed end here ---
 	     ], function (amber) {
 	     	return amber;
@@ -108,7 +108,7 @@ Make it look like this:
 	     	return amber;
 	        });
 	     
-Final view:
+Final view (don't forget that comma I circled):
 ![13](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/13.png)
 	
 Save and Exit.Now if you reload helios you will find the package. (Wow! we have done alot till now right?!)
