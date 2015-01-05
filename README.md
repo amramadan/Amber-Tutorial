@@ -79,15 +79,38 @@ Okay, now to make our own Tutorials package and create a Counter:
 
 	</html>
 
-Well do you see the
+okay, go to the directory of 'myapp' on a file explorer you should find a 'deploy.js' file:
+![11](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/11.png)
 
-	  require(['app'], function (amber)
-	
-change it to
+Open that file in any text editor (packages that you want to be loaded should be added between the comments) :
+![12](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/12.png)
 
-	  require(['app', 'amber-myapp/Tutorials'], function (amber)
+Do you see:
 	
-Now if you reload helios you will find the package. (Wow! we have done alot till now right?!)
+	define([
+	     'amber/depoly',
+	     // --- packages to be deployed begin here ---
+	     'amber-myapp/Myapp'
+	     // --- packages to be deployed end here ---
+	     ], function (amber) {
+	     	return amber;
+	     });
+	     
+Make it look like this:
+define([
+	     'amber/depoly',
+	     // --- packages to be deployed begin here ---
+	     'amber-myapp/Myapp'
+	     'amber-myapp/Tutorials'
+	     // --- packages to be deployed end here ---
+	     ], function (amber) {
+	     	return amber;
+	     });
+	     
+Final view:
+![13](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/13.png)
+	
+Save and Exit.Now if you reload helios you will find the package. (Wow! we have done alot till now right?!)
 
 
 okay lets press on the 'Tutorials' pachage and on the 'TCounter' Class, now look directly under the classes column you will see two things: 1- instance  2-class (they are beside the Doc checkbox)![6](https://github.com/amroto/Amber-Tutorial/blob/master/pictures/6.png)
